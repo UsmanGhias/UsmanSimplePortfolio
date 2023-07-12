@@ -1,0 +1,230 @@
+/* Universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0px 100px;
+  }
+  
+  /* Navigation */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #b54dfab9;
+  
+    padding: 40px 20px;
+  }
+  nav h1 {
+    font-size: 35px;
+  }
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+  }
+  nav ul li:hover {
+    transform: scale(1.1);
+  }
+  nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  nav ul li a:hover {
+    color: rgb(247, 4, 4);
+  }
+  /* Main Introduction Container */
+  .mainIntroduction {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+    height: calc(100vh - 80px);
+    background-color: aliceblue;
+  }
+  .image {
+    width: 400px;
+    height: 400px;
+  
+    animation: slide-in-left 2s ease;
+  }
+  .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  
+    border: 2px solid black;
+  }
+  
+  .introduction {
+    width: 40%;
+  
+    animation: slide-in-right 2s ease-in;
+  }
+  .introduction h1,
+  .introduction p {
+    font-size: 30px;
+    line-height: 1.5;
+  }
+  .introduction h1 {
+    font-size: 50px;
+  }
+  .introduction span {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .socialLinks {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  .socialLinks a {
+    margin-right: 20px;
+  }
+  
+  .socialLinks a:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Animations */
+  @keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+      transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+      transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Media Queries */
+  @media all and (max-width: 576px) {
+    nav {
+      flex-direction: column;
+      gap: 20px;
+    }
+    nav ul li {
+      margin-left: 20px;
+    }
+  
+    .mainIntroduction {
+      flex-direction: column;
+      height: auto;
+    }
+    .introduction h1 {
+      font-size: 35px;
+    }
+    .introduction p {
+      font-size: 25px;
+    }
+    .socialLinks {
+      justify-content: center;
+    }
+    
+  }
+  
+  /* Stats Section */
+  .aboutMe {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .aboutMeDescription {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+    gap: 40px;
+  }
+  .aboutMeDescription img {
+    width: 250px;
+    height: 250px;
+  
+    border-radius: 50%;
+    border: 2px solid black;
+  }
+  .aboutMeDescription .descriptionText {
+    width: 90%;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 10px;
+  
+    animation: slide-in-right 1s ease-out;
+  }
+  .stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+  }
+  .stats .eachStat {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* ================================================================= */
+  /* Services Section */
+  .services {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .servicesList {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .servicesList .eachService {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+  
+    width: 32%;
+    gap: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px 0px;
+  }
+  
+  .projects {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  
+  .eachProject {
+    display: flex;
+  
+    gap: 20px;
+    margin: 20px 0px;
+  }
+  .projectInfo {
+    
+  }
+  
