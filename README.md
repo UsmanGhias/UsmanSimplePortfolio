@@ -49,5 +49,3 @@ Contributions are welcome! If you find any issues with the website or would like
 ## License
 
 This project is licensed under the [Apache](LICENSE).
-```
-```
